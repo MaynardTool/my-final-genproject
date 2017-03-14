@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<AutoInstall>
+	<Software>
+		<Item>
+			<Title>ConfigServer</Title>
+			<Description>Multi-Tenant Configuration Server</Description>
+			<AppFile>confserv.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_ConfigServer64_8510100b1_ENU_windows.zip</URL>
+			<Version>8.5.100.25</Version>
+		</Item>
+		<Item>
+			<Title>ConfigManager</Title>
+			<Description>Configuration Manager</Description>
+			<AppFile>sce.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_ConfigManager_8110007b1_ENU_windows.zip</URL>
+			<Version>8.1.100.7</Version>
+		</Item>
+		<Item>
+			<Title>GA</Title>
+			<Description>Genesys Administrator</Description>
+			<AppFile>Web.config</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_MFWebMan64_8130802b1_ENU_windows.zip</URL>
+			<Version>8.1.308.02</Version>
+		</Item>
+		<Item>
+			<Title>LCA</Title>
+			<Description>Local Control Agent</Description>
+			<AppFile>lca.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_LCA64_8510019b1_ENU_windows.zip</URL>
+			<Version>8.5.100.19</Version>
+		</Item>
+		<Item>
+			<Title>GAX</Title>
+			<Description>Genesys Administrator Extension</Description>
+			<AppFile>gax_startup.bat</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_GAX64_8523003b1_ENU_windows.zip</URL>
+			<Version>8.5.000.06</Version>
+		</Item>
+		<Item>
+			<Title>LRM</Title>
+			<Description>License Reporting Manager</Description>
+			<AppFile>startServer.bat</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_LicRepoMngr64_8500007b1_ENU_windows.zip</URL>
+			<Version>8.5.000.07</Version>
+		</Item>
+		<Item>
+			<Title>MessageServer</Title>
+			<Description>Message Server</Description>
+			<AppFile>MessageServer.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_MsgServer64_8510011b1_ENU_windows.zip</URL>
+			<Version>8.5.100.11</Version>
+		</Item>
+		<Item>
+			<Title>SCS</Title>
+			<Description>Solution Control Server</Description>
+			<AppFile>scs.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_SCServer64_8510021b1_ENU_windows.zip</URL>
+			<Version>8.5.100.21</Version>
+		</Item>
+		<Item>
+			<Title>DBServer</Title>
+			<Description>DB Server</Description>
+			<AppFile>multiserver.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_DBServer64_8130112b1_ENU_windows.zip</URL>
+			<Version>8.1.300.05</Version>
+		</Item>
+		<Item>
+			<Title>ChicagoSIPServer</Title>
+			<Description>SIP Server</Description>
+			<AppFile>sip_server.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_TSrvSIP64_8110255b1_ENU_windows.zip</URL>
+			<Version>8.1.102.55</Version>
+		</Item>
+		<Item>
+			<Title>WDE</Title>
+			<Description>Workspace Desktop Edition</Description>
+			<AppFile>InteractionWorkspace.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_IntWorkspace_8511612b1_ENU_windows.zip</URL>
+			<Version>8.5.116.12</Version>
+		</Item>
+		<Item>
+			<Title>SIPEndpoint</Title>
+			<Description>Workspace SIP Endpoint</Description>
+			<AppFile>C:\Program Files\GCTI\WDE\InteractionWorkspaceSIPEndpoint\InteractionWorkspaceSIPEndpoint.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_IntWSpaceSIPEp_8511103b1_ENU_windows.zip</URL>
+			<Version>8.5.111.03</Version>
+		</Item>
+		<Item>
+			<Title>RoutingStatServer</Title>
+			<Description>Routing Stat Server</Description>
+			<AppFile>statserv.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_StatServer64_8510509b1_ENU_windows.zip</URL>
+			<Version>8.5.105.09</Version>
+		</Item>
+		<Item>
+			<Title>ReportingStatServer</Title>
+			<Description>Reporting Stat Server</Description>
+			<AppFile>statserv.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_StatServer64_8510509b1_ENU_windows.zip</URL>
+			<Version>8.5.105.09</Version>
+		</Item>
+		<Item>
+			<Title>URS</Title>
+			<Description>Universal Routing Server</Description>
+			<AppFile>ur_server.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_URServer64_8140032b1_ENU_windows.zip</URL>
+			<Version>8.1.400.32</Version>
+		</Item>
+		<Item>
+			<Title>ORS</Title>
+			<Description>Orchestration Server</Description>
+			<AppFile>orchestration.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_ORServer_8130041b1_ENU_windows.zip</URL>
+			<Version>8.1.300.41</Version>
+		</Item>
+		<Item>
+			<Title>Composer</Title>
+			<Description>Composer</Description>
+			<AppFile>composer_global.properties</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_Composer_8143003b1_ENU_windows.zip</URL>
+			<Version>8.1.430.03</Version>
+		</Item>
+		<Item>
+			<Title>IRD</Title>
+			<Description>Interaction Routing Designer</Description>
+			<AppFile>RoutingDesigner.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_IRDesigner64_8140021b1_ENU_windows.zip</URL>
+			<Version>8.1.400.21</Version>
+		</Item>
+		<Item>
+			<Title>ICON_LRM</Title>
+			<Description>Interaction Concentrator</Description>
+			<AppFile>icon.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_ICon64_8151101b2_ENU_windows.zip</URL>
+			<Version>8.1.512.08</Version>
+		</Item>
+		<Item>
+			<Title>PulseCollector</Title>
+			<Description>Pulse Collector</Description>
+			<AppFile>collector.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_EZPulseCol64_8510602b1_ENU_windows.zip</URL>
+			<Version>8.5.106.02</Version>
+		</Item>
+		<Item>
+			<Title>DataSourcer</Title>
+			<Description>Data Sourcer</Description>
+			<AppFile>data_sourcer.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_CCADataSourcer_8100109b1_ENU_windows.zip</URL>
+			<Version>8.1.001.09</Version>
+		</Item>
+		<Item>
+			<Title>DMA</Title>
+			<Description>Data Modelling Assistant</Description>
+			<AppFile>DMA.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_CCADMAssistant_8100011b1_ENU_windows.zip</URL>
+			<Version>8.1.000.11</Version>
+		</Item>
+		<Item>
+			<Title>ETLRuntime</Title>
+			<Description>Data Mart</Description>
+			<AppFile>C:\Program Files\GCTI\ETLRuntime\etl_runtime\starter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_CCADataMart_8100104b2_ENU_windows.zip</URL>
+			<Version>8.1.001.04</Version>
+		</Item>
+		<Item>
+			<Title>CCPulse</Title>
+			<Description>CCPulse+</Description>
+			<AppFile>CallCenter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_CCPulsePlus64_8110036b1_ENU_windows.zip</URL>
+			<Version>8.1.100.36</Version>
+		</Item>
+		<Item>
+			<Title>IxnDBServer</Title>
+			<Description>Interaction DB Server</Description>
+			<AppFile>multiserver.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_DBServer64_8130112b1_ENU_windows.zip</URL>
+			<Version>8.1.300.05</Version>
+		</Item>
+		<Item>
+			<Title>IxnServer</Title>
+			<Description>Interaction Server</Description>
+			<AppFile>interaction_server.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSInteractSrv64_8510806b1_ENU_windows.zip</URL>
+			<Version>8.5.108.06</Version>
+		</Item>
+		<Item>
+			<Title>WebAPIServer</Title>
+			<Description>Web API Server</Description>
+			<AppFile>C:\Program Files\GCTI\WebAPIServer\Web API Server\WebAPIServer\lms\webapiserverjava.lms</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSWebAPISrv_8120005b2_ENU_windows.zip</URL>
+			<Version>8.1.200.05</Version>
+		</Item>
+		<Item>
+			<Title>UCS</Title>
+			<Description>Universal Contact Server</Description>
+			<AppFile>ContactServerDriver.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSContSrv64_8520017b1_ENU_windows.zip</URL>
+			<Version>8.5.200.17</Version>
+		</Item>
+		<Item>
+			<Title>UCSManager</Title>
+			<Description>Universal Contact Server Manager</Description>
+			<AppFile>ucsmanager.bat</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSContSrvMngr64_8500003b1_ENU_windows.zip</URL>
+			<Version>8.5.000.03</Version>
+		</Item>
+		<Item>
+			<Title>ESJ</Title>
+			<Description>E-mail Server Java</Description>
+			<AppFile>JavaEmailServerDriver.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSEmailSrvJava64_8510317b1_ENU_windows.zip</URL>
+			<Version>8.5.103.17</Version>
+		</Item>
+		<Item>
+			<Title>ChatServer</Title>
+			<Description>Chat Server</Description>
+			<AppFile>ChatServer.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSChatSrv64_8510610b1_ENU_windows.zip</URL>
+			<Version>8.5.106.10</Version>
+		</Item>
+		<Item>
+			<Title>ClassificationServer</Title>
+			<Description>Classification Server</Description>
+			<AppFile>ClfServerStarter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSClassificSrv64_8511005b1_ENU_windows.zip</URL>
+			<Version>8.5.110.05</Version>
+		</Item>
+		<Item>
+			<Title>TrainingServer</Title>
+			<Description>Training Server</Description>
+			<AppFile>TrnServerStarter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSTrainingSrv64_8511003b1_ENU_windows.zip</URL>
+			<Version>8.5.110.03</Version>
+		</Item>
+		<Item>
+			<Title>SMSServer</Title>
+			<Description>Short Message Service Server</Description>
+			<AppFile>SmsServerStarter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_eSSMSSrv64_8510019b2_ENU_windows.zip</URL>
+			<Version>8.5.100.19</Version>
+		</Item>
+		<Item>
+			<Title>SocialMessagingServer</Title>
+			<Description>Social Messaging Server</Description>
+			<AppFile>SmServerStarter.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_SocialMsgSrv64_8510119b1_ENU_windows.zip</URL>
+			<Version>8.5.101.19</Version>
+		</Item>
+		<Item>
+			<Title>MCP</Title>
+			<Description>Media Control Platform</Description>
+			<AppFile>C:\Program Files\GCTI\MCP\bin\pwcallmgr.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_vpMediaControl64_8517605b1_ENU_windows.zip</URL>
+			<Version>8.5.176.05</Version>
+		</Item>
+		<Item>
+			<Title>RM</Title>
+			<Description>Resource Manager</Description>
+			<AppFile>C:\Program Files\GCTI\RM\bin\resourcemgr.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_vpResMngr64_8517595b1_ENU_windows.zip</URL>
+			<Version>8.5.175.95</Version>
+		</Item>
+		<Item>
+			<Title>CCP</Title>
+			<Description>Call Control Platform</Description>
+			<AppFile>C:\Program Files\GCTI\CCP\bin\ccpccxml.exe</AppFile>
+			<URL>\\192.168.20.216\edungog\IP_vpCallControl64_8501082b1_ENU_windows.zip</URL>
+			<Version>8.5.010.82</Version>
+		</Item>
+	</Software>
+</AutoInstall>
