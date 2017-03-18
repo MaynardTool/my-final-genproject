@@ -12,7 +12,7 @@ import datetime
 import shutil
 import urllib2
 import webbrowser
-import fcntl
+#  import fcntl
 import threading
 from threading import Thread, Event
 import platform
@@ -30,6 +30,7 @@ import _winreg
 import errno
 from cfgparse.compat import ConfigParser
 import fileinput
+from win_unc import (DiskDrive, UncDirectory, UncDirectoryConnection, UncCredentials)
 
 # Genesys module
 # import gcti_cfg
@@ -740,7 +741,7 @@ def on_install_button_active(button, model, selectcount):
                     appendToLog('[Notice] Executing setup command ...')
                     appendToLog('[Notice] Starting to install %s using  - %s ...' % (titleList[listItem], ini))
                     cmd = '%s\setup.exe /s /z"-s %s -sl %s\genesys_install_result.log"' % (appFilePath, ini, appFilePath)
-                    appendToLog('[Notice] Command is %s ' % cmd)
+                    # appendToLog('[Notice] Command is %s ' % cmd)
                     get_exitcode_stdout_stderr_zip_dvd(cmd)
                 except:
                     debugPrint('[Error] Installation of %s not successful.' % titleList[listItem])
@@ -890,6 +891,9 @@ def joinTreads():
     return True
 
 
+
+
+
 def on_cancel_button(widget=''):
     global installButtonTxt
     global checkItemOldState
@@ -947,7 +951,13 @@ def on_cancel_button(widget=''):
     # If not busy just quit
     if loop_thread:
         joinTreads()
+
     mainWindow.destroy()
+
+    cmd = subprocess.Popen('NET USE * /DELETE /Y', stdout=subprocess.PIPE)
+    cmd_out, cmd_err = cmd.communicate()
+    appendToLog(cmd_out)
+
     sys.exit()
 
 
@@ -1434,7 +1444,7 @@ def uninstallSoftwareItems():
                                                           pGUID)
                     appendToLog('Starting to uninstall %s using  - %s...' % (titleList[listItem], iss))
                     cmd = '"%s\setup.exe" /s /f1"%s"' % (uninstall_path, iss)
-                    appendToLog('[Notice] Command is %s ' % cmd)
+                    # appendToLog('[Notice] Command is %s ' % cmd)
                     get_exitcode_stdout_stderr_zip_dvd(cmd)
                     debugPrint("[Notice] Uninstalled : %s" % titleList[listItem])
                     appendToLog("[Notice] Uninstalled : %s" % titleList[listItem])
@@ -2424,8 +2434,22 @@ if __name__ == "__main__":
     localVersionPath = os.path.join(installDir, VersionFilename)
 
     # Pre-configured remote file
-    iniFile = r'\\10.20.192.212\ini'
-    issFIle = r'\\10.20.192.212\iss'
+    zipFile = r'\\10.20.192.212\zip$'
+    iniFile = r'\\10.20.192.212\ini$'
+    issFIle = r'\\10.20.192.212\iss$'
+
+    unc_path = [zipFile, iniFile, issFIle]
+
+    # TODO
+    '''
+    # Connect to network share
+    unc_path =[zipFile, iniFile, issFIle]
+    for i in unc_path:
+        unc = UncDirectory(i, UncCredentials('Administrator', 'NewVMSa1!'))
+        conn  = UncDirectoryConnection(unc)
+        conn.connect()
+        appendToLog('Connected? %s' %conn.is_connected())
+    '''
 
     # TODO
     '''
@@ -2563,6 +2587,13 @@ if __name__ == "__main__":
       checkListUpdate()
     '''
 
+    for i in unc_path:
+        appendToLog('Accessing network share.')
+        cmd = subprocess.Popen('NET USE %s "NewVMSa1!" /USER:"Administrator" /PERSISTENT:NO' %i, stdout=subprocess.PIPE)
+        cmd_out, cmd_err = cmd.communicate()
+        appendToLog(cmd_out)
+
+
     # Parse the XML install file
     splashLabelText.set('Checking installed software...')
     splashProgressPercent.set(70)
@@ -2667,6 +2698,7 @@ if __name__ == "__main__":
     # Render Main Window
     renderMainWindow()
     mainWindow.lift()
+
     # Start Mainwindow loop
     mainWindow.mainloop()
 
