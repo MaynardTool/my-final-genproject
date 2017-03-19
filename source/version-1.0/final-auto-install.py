@@ -2589,7 +2589,7 @@ if __name__ == "__main__":
 
     for i in unc_path:
         appendToLog('Accessing network share.')
-        cmd = subprocess.Popen('NET USE %s "NewVMSa1!" /USER:"Administrator" /PERSISTENT:NO' %i, stdout=subprocess.PIPE)
+        cmd = subprocess.Popen('NET USE %s PWD /USER:USER /PERSISTENT:NO' %i, stdout=subprocess.PIPE)
         cmd_out, cmd_err = cmd.communicate()
         appendToLog(cmd_out)
 
